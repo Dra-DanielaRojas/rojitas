@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ribeye+Marrow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+} 
+ 
+div {
+  display: flex;  
+} 
+.encabezado-container {
+  /* min-height: 15vh;  */ /* Para q el encabezado pueda achicarse */
+  padding: 1% 2%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 41, 102);
+  justify-content: center;
+}
+.menu-encabezado {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-izq h3 {
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+}
+.menu-izq img {
+  height: 100px;
+  width: auto;
+}
+.menu-dch {
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-family: "Acme", sans-serif, 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(199 193 193);
+ }
+ .sociales {
+  flex-direction: row;
+  justify-content: end;
+ }
+ .redSocial {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+ }
+ .nombre-presentacion {
+  /* font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; */
+  /* font-size: 1.5rem; */
+  /* text-align: end; */
+  justify-content: end;
+  padding: 5px;
+ }
+ .contacto-cabecera {
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .contacto-cabecera span {
+  font-size: larger;
+  padding-right: 20px;
+ }
+button:hover {
+  filter: brightness(120%);
+
+}
+button {
+  background-color: #128c7e;
+  color: #fff;
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+  .barra-accesos {
+    min-height: 6vh;
+    justify-content: end;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(81, 93, 163);
+    flex-wrap: wrap;
+  }
+  .caja:hover{
+    border-bottom-color: #7e90aa;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    cursor: pointer;
+  }
+  .caja {
+    height: 100%;
+    padding: 5px;
+    align-items: center;
+    color: aliceblue;
+  }
+  .menu-izq {
+    font-size: xx-large;
+    align-items: center;
+    color: #a237b6;
+  }
+
+  /* Pa testear */
+.exposi-container {
+  background-image: url(../imagenes/img2.jpg);
+  background-size: cover;
+  height: 50vw;
+  justify-content: flex-end;
+  background-position: 0vw -630vw;
+  border-bottom: solid 2px;
+  border-bottom-color: black;
+  border-top: solid 2px;
+  border-top-color: black;
+}
+  
+  .faq-container, 
+  .contacto-container {
+    /* min-height: 80vh;  el tamaño será definido por la img*/ 
+    justify-content: center;
+  }
+ 
+
+  .redSocial.insta:hover, .redSocial.face:hover, .background-tiktok:hover {
+    transform: translateY(-6px);
+  }
+
+  .redSocial.insta {
+  /* position: absolute; se sobre posiciona */ 
+	width: 30px;
+	height: 30px;
+	background: radial-gradient(circle at 30% 110%,
+			#ffdb8b 0%,
+			#ee653d 25%,
+			#d42e81 50%,
+			#a237b6 75%,
+			#3e57bc 100%);
+	border-radius: 5px;
+	box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .2s linear;
+}
+
+.redSocial.insta::after {
+  content: "";
+  position: absolute;
+  /* top: 23px; */
+  /* right: 22px; */
+  border: 2px solid #fff;
+  height: 17px;
+  width: 17px;
+  border-radius: 5px;
+}
+
+
+.redSocial.insta::before {
+  content: "";
+  /* position: absolute; */
+  top: 49px;
+  right: 49px;
+  border: 2px solid #fff;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.redSocial.face {
+  /* position: absolute; */
+  background: #3b5998;
+  text-indent: -999em;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 7px solid #3b5998;
+  border-bottom: 0;
+  display: inline-block;
+}
+.redSocial.face::before {
+  background: #3b5998;
+  content: "/20";
+  position: absolute;
+  bottom: -7px;
+  right: -17.5px;
+  width: 20px;
+  height: 23px;
+  border: 4px solid #eee;
+  border-radius: 6px;
+  }
+.redSocial.face::after {
+  background: #eee;
+  content: "/20";
+  position: absolute;
+  top: 10px;
+  right: -2px;
+  width: 17px;
+  height: 4px;
+}
+
+.background-tiktok {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  align-items: center;
+  padding-left: 5px;
+}
+.redSocial.tiktok {
+  margin: 10px;
+  width: 3px;
+  height: 14px;
+  background: white;
+  box-shadow: 0.7px 0px 0 0 #fe2d52;
+  filter: drop-shadow(-1px -1px #28ffff);
+  position: relative;
+  padding: 0px;
+
+}
+.redSocial.tiktok:after {
+  content: "";
+  position: absolute;
+  border: 3px solid white;
+  width: 5px;
+  height: 5px;
+  border-top-color: transparent;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  filter: drop-shadow(1px 0px 0px #fe2d52);
+  inset: 7px -8px;
+}
+.redSocial.tiktok:before {
+  content: "";
+  position: absolute;
+  border: 3px solid transparent;
+  width: 9px;
+  height: 9px;
+  border-bottom-color: white;
+  border-radius: 100%;
+  transform: rotate(45deg);
+  filter: drop-shadow(1px 0px 0 #fe2d52);
+  inset: -8px 0px;
+}
+
+
+
+.servicios-container {
+  /* min-height: 70vh;  pa q el alto se acomode al contenido*/
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #a6afd1;
+}
+.servicios-caja {
+  justify-content: center;
+  /* padding: 3%; */
+  /* height: 65%; */
+  /* width: 70%; */
+  flex-direction: column;
+  /* align-items: self-end; */
+  /* justify-content: space-between; */
+}
+.servicios-span:hover {
+  background-color: #625799;
+  color: #eee;
+  .span-icono {
+  filter: invert(1);
+  }
+  .span-leyenda {
+    color: #eee;
+  }
+}
+.servicios-span {
+    height: 230px;
+    /* max-height: 165px; */
+    width: 185px;
+    /* min-width: 137px; */
+    /* padding: 2%; */
+    flex-direction: column;
+    border-color: black;
+    border-radius: 25px;
+    border: solid;
+    align-self: center;
+    margin: 15px;
+    justify-content: space-evenly;
+}
+.servicios-caja-sup, .servicios-caja-inf {
+    /* width: 100%; */
+    justify-content: space-around;
+    /* height: 50%; */
+    padding: 2% 0;
+}
+.servicio-titulo {
+
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px 0px 0px;
+  font-size: 1.5rem;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.span-icono, .span-leyenda {
+    /* width: 100%; */
+    /* height: 50%; */
+    /* padding: 7%; */
+    /* padding-left: 15%; */
+    /* padding-right: 15%; */
+    justify-content: center;
+    /* align-content: center; */
+    font-family: system-ui;
+    text-align: center;
+    color: black;
+    align-self: center;
+}
+.span-icono img {
+  width: 75px;
+  height: 75px;
+}
+.bottom-container {
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 41, 102)
+
+}
+.bottom {
+  width: 30%;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-family: "Acme", sans-serif, 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue';
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+}
+.bottom.caja-dch {
+  height: 85%;
+  width: 40%;
+}
+.bottom-elem {
+  flex-direction: column;
+  font-size: 20px;
+  color: darkcyan;
+  padding-bottom: 10px;
+}
+.bottom-elem.logo{
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex-direction: row;
+  align-items: center;
+  color: #a237b6;
+  /* font-size: 3.5rem; */
+}
+.bottom-elem.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+}
+.faq-container {
+  background-color: #4a50a1;
+  align-items: center;
+}
+.preguntas-central {
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  width: 80%;
+  /* min-width: 100vh; afecta al reducir la pantalla */
+  color: white;
+}
+
+.titulo {
+  font-size: 30px;
+  margin: 2rem 0rem;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.faq {
+  flex-direction: column;
+}
+.faqitem {
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  max-width: 700px;
+   /* margin-top: 2rem; */
+  padding-top: 1rem;
+  border-bottom: 2px solid #fff;
+}
+.pregunta {
+  justify-content: space-between;
+  align-items: center;
+  align-self: normal;
+  
+}
+.pregunta h3 {
+  font-size: 1.9rem;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+.respuesta p {
+  padding-top: 1rem;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(199 193 193);
+}
+.faqitem.active .respuesta {
+  max-height:  300px;
+  animation: fade 1s ease-in-out;
+
+}
+.faqitem.active svg {
+  transform: rotate(180deg);
+}
+svg {
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+}
+

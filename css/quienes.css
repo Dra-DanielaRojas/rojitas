@@ -1,0 +1,10 @@
+.quienes-container {
+    background-image: url(../imagenes/fondo2.jpg);
+    background-size: cover;
+    height: 50vw;
+    justify-content: flex-end;
+    border-bottom: solid 2px;
+    border-bottom-color: black;
+    border-top: solid 2px;
+    border-top-color: black;
+}

@@ -1,0 +1,27 @@
+.slider-img {
+    background-image: url(../imagenes/Daniela-portada.png);
+    background-size: cover;
+    width: 40%; /* tamaño ideal */
+    height: 100%;
+    background-position: 0px -2vw;
+    /* border-radius: 10px; */
+    animation: animate 15s infinite; /* falto la s */
+    
+}
+
+@keyframes animate {
+    33% {
+        background-image: url(../imagenes/daniela-paciente.png);
+        background-size: cover;
+    }
+    66% {
+        background-image: url(../imagenes/daniela-tools.png);
+        background-size: cover;
+
+    }
+    100% {
+        background-image: url(../imagenes/Daniela-portada.png);
+        background-size: cover;
+    }
+    
+}

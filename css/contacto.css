@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Neonderthaw&display=swap');
+
+.contacto-container {
+    background-image: url(../imagenes/consultorio-frontal.jpg);
+    background-size: cover;
+    background-position: 0% 42%;
+}
+.contacto-caja {
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.encabezado-contacto h1 {
+    padding-bottom: 12px;
+    margin: 10px;
+    color: #ffffff;
+}
+.contacto-container .cuerpo-izq, .contacto-container .cuerpo-dch {
+    flex-direction: column;
+}
+.container-mapa {
+    min-width: 50vw;
+    min-height: 37vw;
+    border: solid 4px;
+}
+.contacto-container .cuerpo-izq {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
+    /* max-width: 350px; */
+    /* padding: 10% 0 10% 0%; */
+    justify-content: end;
+    padding: 25px 25px 0px 25px;
+
+}
+.contacto-container .cuerpo-izq h3 {
+    padding-bottom: 10px;
+    background-color: #000000a8;
+    color: white;
+    padding: 20px 20px 0px 20px;
+}
+.contacto-container .cuerpo-izq h2 {
+    padding-bottom: 10px;
+    color: #5a716b;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    background-color: #000000a8;
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+
+}
+.contacto-container .cuerpo-izq p {
+    padding-bottom: 10px;
+    background-color: #000000a8;
+    color: white;
+    padding: 20px 20px 0px 20px;
+}
+.encabezado-contacto {
+    align-self: flex-end;
+    /* padding-right: 25%; */
+}
+.cuerpo-izq h2 {
+    align-self: center;
+}
+
+/* Responsive part */
+
+@media (min-width: 300px) and (max-width: 750px) {
+    .encabezado-contacto {
+        align-self: center;
+        background-color: #000000a8;
+        color: white;
+        padding: 20px 20px 0px 20px;
+        margin: 10px;
+    }
+
+    .cuerpo-contacto {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
