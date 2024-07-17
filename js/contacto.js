@@ -43,10 +43,10 @@ const handleScroll = () => {
     var mensaje = document.querySelector("#mensaje").value;
     
     var url = "https://wa.me/" + phone + "?text="
-    + "*Nombre :*" + name + "%0a"
-    + "*Celular :*" + celu + "%0a"
-    + "*Asunto :*" + asunto + "%0a"
-    + "*Mensaje :*" + mensaje;
+    + "*Nombre :* " + name + "%0a"
+    + "*Celular :* " + celu + "%0a"
+    + "*Asunto :* " + asunto + "%0a"
+    + "*Mensaje :* " + mensaje;
     
     window.open(url, '_blank').focus();
 }
