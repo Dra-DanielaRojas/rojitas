@@ -32,3 +32,21 @@ const handleScroll = () => {
   };
 
   window.addEventListener("scroll", handleScroll);
+
+  // Funcion Whatsapp
+  function sendWhatsapp(){
+    var phone = "+59174761884";
+
+    var name = document.querySelector("#name").value;
+    var celu = document.querySelector("#celu").value;
+    var asunto = document.querySelector("#asunto").value;
+    var mensaje = document.querySelector("#mensaje").value;
+    
+    var url = "https://wa.me/" + phone + "?text="
+    + "*Nombre :*" + name + "%0a"
+    + "*Celular :*" + celu + "%0a"
+    + "*Asunto :*" + asunto + "%0a"
+    + "*Mensaje :*" + mensaje;
+    
+    window.open(url, '_blank').focus();
+}

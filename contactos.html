@@ -40,9 +40,9 @@
           <div class="caja contacto" onclick="location.href='contactos.html';">Contacto</div>
           <div class="caja galeria" onclick="location.href='galeria.html';">Galeria</div>
         </div>
-        <div class="contacto-container">
-          
+        <!-- fin barra barra-accesos -->
 
+        <div class="contacto-container">
           <div class="contacto-caja">
             <div class="encabezado-contacto"><h1>Santa Cruz de la Sierra</h1></div>
             <div class="cuerpo-contacto">
@@ -63,9 +63,36 @@
               </div>
             </div>
           </div>
- 
+        </div>
+         <!-- fin contacto-container -->
+
+        <div class="contacto-form-box">
+          <div class="encabezado-form">
+            Realiza tu consulta aquí
+          </div>
+          <div class="form-seccion">
+            <form>
+    
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Daniela Rojas">
+    
+                <label for="celu">Celular</label>
+                <input type="text" id="celu" placeholder="74761884">
+    
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" placeholder="Consulta precios">
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea type="text" id="mensaje" placeholder="Escriba su consulta..." cols="50" rows="7"></textarea>
+                
+                <button type="button" id="enviar-w" onclick="sendWhatsapp();">Enviar  con Whatsapp</button>
+            
+            </form>
+           
+        </div>
 
         </div>
+
         <div class="servicios-container">
           <div class="servicio-titulo"><h1>Servicios</h1></div>
           <div class="servicio-titulo subtitulo"><p>Lo mejor de lo mejor para tu sonrisa</p></div>

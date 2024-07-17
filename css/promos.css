@@ -35,15 +35,18 @@
     display: block;
 }
 .slide:nth-child(1){ /* Permite seleccionar el "1" elemento del selector (slide), es decir el primer slide q pille en el código */
-    background-image: url("../Promos/sillon-fondo.jpg");
+    background-image: url("../Promos/protesis.jpg");
+
 
 }
 .slide:nth-child(2) {
-    background-image: url("../Promos/promo-sonrisa.jpg");
+    background-image: url("../Promos/ortodoncia.jpg");
+
 }
-.slide:nth-child(3) {
-    background-image: url("../imagenes/img3.jpg");
-}
+
+/* .slide:nth-child(3) {
+    background-image: url("../Promos/ortodoncia.jpg");
+} */
 .slide {
     display: none;
     height: 100%;
@@ -114,13 +117,14 @@
     max-width: 300px;
 }
 .slide .content p {
-    font-size: 22px;
+    font-size: 30px;
     margin: 10px 0px;
     color: rgb(110, 8, 8);
     text-align: left;
     opacity: 0;
     animation: captionAnimation 0.5s ease-in-out forwards;
     animation-delay: 0.8s;
+    font-family: "Kaushan Script", cursive;
 }
 .slide .content a {
     /* background-color: black; */
