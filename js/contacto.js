@@ -33,7 +33,7 @@ const handleScroll = () => {
 
   window.addEventListener("scroll", handleScroll);
 
-  // Funcion Whatsapp
+  // Función Whatsapp 
   function sendWhatsapp(){
     var phone = "+59174761884";
 
