@@ -163,4 +163,10 @@
       transform: rotate(0deg);
     }
   }
+
+@media (max-width: 768px) {
+  .gallerycontainer h1 {
+    font-size: 0;
+  }
   
+}
