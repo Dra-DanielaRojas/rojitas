@@ -3,16 +3,28 @@
         justify-content: flex-end;
     }
 }
-@media (min-width: 300px) and (max-width: 768px) {
+@media (max-width: 768px) {
+    .barra-accesos {
+        justify-content: space-around;
+        min-height: 9vh;
+        font-size: 16px;
+    }
     .servicios-caja-sup, .servicios-caja-inf {
         flex-direction: column;
+        padding: 0;
     }
-    
+    .servicios-container {
+        padding: 10px;
+    }
+    .servicio-titulo {
+        margin: 0;
+    }
     .servicios-span {
         flex-direction: row;
         height: 60px;
         width: 240px;
         justify-content: flex-start;
+        margin: 10px 0px 0px 0px;
     }
     .span-icono img {
         width: 45px;
@@ -20,18 +32,19 @@
     }
     .span-icono, .span-leyenda {
         margin-left: 17px;
+        text-align: start;
     }
     .menu-encabezado {
         justify-content: flex-end;
     }
     .menu-izq h3 {
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
 }
 
 /* Página de promos */
 /* CSS for mobile responsive */
-@media (min-width: 300px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .slideContainer {
         width: 100%;
         padding: 0 15px;
